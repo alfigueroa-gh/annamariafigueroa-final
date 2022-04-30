@@ -1,20 +1,35 @@
 {% extends '_templates/base.njk' %}
 
+{% block page_title %}Austin Tourism{% endblock %}
+
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 center">
       <h1>Main headline here</h1>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
     </div>
   </div>
   
-  <div class="container">
+  <div class="row">
+  <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <p class="card-text"> {{ landmarks.activities }} </p>
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
 </div>
+
 {% endblock %}
