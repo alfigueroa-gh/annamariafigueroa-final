@@ -3,6 +3,20 @@
 {% block content %}
 <article class="container">
   <h1>Austin Landmarks</h1>
-  <p>Intro text here.</p>
+  <p>Here are some of Austin's most famous landmarks.</p>
+  <div class="row">
+    {% for item in landmarks.landmarks %}
+    <div class="col-sm-6">
+      <div class="card mb-4">
+       <img src="img/landmarks/{{ item.image }}" class="card-img-top" alt="">
+       <div class="card-body">
+         <h5 class="card-title">{{ item.name }}</h5>
+         <p class="card-text">{{ item.location }}</p>
+         <a href="{{ item.url }}" target="_blank">More Info</a>
+       </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </article>
 {% endblock %}
